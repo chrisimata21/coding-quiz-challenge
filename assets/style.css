@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.quiz-container {
+    text-align: center;
+    border-color: #d3d3d3;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 19px;
+    margin: 100px;
+    padding: 15px;
+}
+
+.quiz-container p {
+    display: inline-flex;
+    padding: 0 15px;
+}
+
+button {
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+header {
+    padding: 10px;
+}
