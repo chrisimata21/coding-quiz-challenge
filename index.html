@@ -7,18 +7,15 @@
         <link rel="stylesheet" href="./assets/style.css" />
         <title>Coding Quiz</title>
     </head>
-    <header>
-        <button onclick="">View Highscores</button>
-    </header>
     <body>
+        <h1>Coding Quiz Challenge</h1>
         <div class="quiz-container">
-            <h1>Coding Quiz Challenge</h1>
-            <p>
-                Try to answer these code-related questions before the timer runs out. Keep in mind that if you get an incorrect answer, you will be docked time.
-            </p>
-            <div class="start-button">
-                <button>Start</button>
-            </div>
+            <div id="quiz"></div>    
         </div>
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+        <script src="./assets/script.js"></script>
     </body>
 </html>
