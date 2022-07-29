@@ -101,6 +101,16 @@
     showSlide(currentSlide - 1);
   }
 
+  function startQuiz() {
+    var x = document.getElementById("start");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  startQuiz();
+  //function showScores();
   
 
   // Variables
@@ -108,34 +118,6 @@
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
   const myQuestions = [
-    {
-      question: "Who invented JavaScript?",
-      answers: {
-        a: "Douglas Crockford",
-        b: "Sheryl Sandberg",
-        c: "Brendan Eich"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Which one of these is a JavaScript package manager?",
-      answers: {
-        a: "Node.js",
-        b: "TypeScript",
-        c: "npm"
-      },
-      correctAnswer: "c"
-    },
-    {
-      question: "Which tool can you use to ensure code quality?",
-      answers: {
-        a: "Angular",
-        b: "jQuery",
-        c: "RequireJS",
-        d: "ESLint"
-      },
-      correctAnswer: "d"
-    },
     {
       question: "What is the name of the object that allows you to perform mathematical tasks with the interpreter?",
       answers: {
@@ -158,9 +140,7 @@
     },
   ];
 
-  // Kick things off
-  buildQuiz();
-
+buildQuiz();
   // Pagination
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
@@ -168,11 +148,11 @@
   let currentSlide = 0;
 
   // Show the first slide
-  showSlide(currentSlide);
+  //showSlide(currentSlide);
 
   // Event listeners
   submitButton.addEventListener('click', showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
-  scoreButton.addEventListener("click", showScores)
+
 })();
